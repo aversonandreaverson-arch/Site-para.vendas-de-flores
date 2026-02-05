@@ -2,180 +2,125 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>DilciaShop</title>
+  <title>PalmiraFestArt</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-  rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- HEADER -->
   <header class="header">
-    <div class="container">
-      <h1 class="logo"><div class="logo"><img src="imgDilciaShop/logo2.png" alt="logotipo"></div></h1>
-      <a href="#produtos" class="btn-outline">Comprar</a>
+    <div class="container flex-header">
+      <div class="logo">
+        <img src="imgDilciaShop/logo sem titulo.png" alt="logotipo">
+      </div>
+      <nav>
+        <a href="#produtos" class="btn-outline">Produtos</a>
+        <a onclick="falarwhatsApp()" class="btn-outline">WhatsApp</a>
+      </nav>
     </div>
   </header>
 
-  
-  
-
   <!-- HERO -->
-  <section class="hero position-relative"  >
-<!-- CAROUSEL -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="imgDilciaShop/Flores1.jpeg" class="d-block w-100" alt="...">
+  <section class="hero position-relative">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imgDilciaShop/Flores1.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imgDilciaShop/Flores2.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imgDilciaShop/Flores3.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
     </div>
-    <div class="carousel-item">
-      <img src="imgDilciaShop/Flores2.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imgDilciaShop/Flores3.jpeg" class="d-block w-100" alt="...">
-    </div>
-  </div>
 
-  
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-<!-- fim do carousel -->
-
-    <div class="overlay" ></div>
-
-    <div class="hero-content text-center text-white">
+    <div class="overlay"></div>
+    <div class="hero-content text-center text-white animate-fade">
       <h2>Flores que transformam momentos</h2>
       <p>Buquês exclusivos, feitos à mão, para quem ama com intenção</p>
-      <a href="#produtos" class=" btn-primary"  >Ver Produtos Em Destaque</a>
+      <a href="#produtos" class="btn-primary">Ver Produtos</a>
     </div>
   </section>
-
-  <!-- VALORES -->
-  <!-- <section class="valores container">
-    <div class="valor">
-      <h3>🌷 Frescor</h3>
-      <p>Flores selecionadas diariamente</p>
-    </div>
-    <div class="valor">
-      <h3>🚚 Entrega Rápida</h3>
-      <p>Entregamos no mesmo dia</p>
-    </div>
-    <div class="valor">
-      <h3>❤️ Amor em cada detalhe</h3>
-      <p>Arranjos feitos à mão</p>
-    </div>
-  </section> -->
 
   <!-- PRODUTOS -->
   <section id="produtos" class="produtos container">
-    <h2>Nossos Produtos</h2>
-
+    <h2 class="animate-fade">Nossos Produtos</h2>
     <div class="grid">
-      <div class="card destaque" >
-         <h3>Buquês (Rosas e Dinheiro)</h3>
-
+      <div class="card destaque animate-card">
+        <h3>Buquês (Rosas e Dinheiro)</h3>
         <img src="imgDilciaShop/Flores3.jpeg" alt="Buquês">
-               <p class="preco">Buquês personalizados para momentos especiais</p>
-               <a href="buquês.html" class="btn-primary">Ver mais de Buquês</a>
-        <!-- <button onclick="comprarWhatsApp('Rosas Vermelhas', 15000)" class="btn-primary">Comprar</button> -->
+        <p class="preco">Buquês personalizados para momentos especiais</p>
+        <a href="buques.html" class="btn-primary">Ver Buquês</a>
       </div>
-        <!-- POLAROID -->
-      <div class="card">
+      <div class="card animate-card">
         <h3>Fotos Polaroid</h3>
-                <img src="imgDilciaShop/fotos paloroid 2.png" alt="Polaroid">
+        <img src="imgDilciaShop/fotos paloroid 2.png" alt="Polaroid">
         <p class="preco">Fotos eternizadas com estilo e emoção</p>
-                       <a href="polaroid.html" class="btn-primary">Ver mais de Polaroid</a>
-
-      <!--   <button onclick="comprarWhatsApp('Girassóis Premium' , 18000)" class="btn-primary">Comprar</button> -->
+        <a href="polaroid.html" class="btn-primary">Ver Polaroid</a>
       </div>
-
-      <!-- Caixas Explosivas -->
-      <div class="card">
+      <div class="card animate-card">
         <h3>Caixas Explosivas</h3>
-                <img src="imgDilciaShop/caixas explosivas.png" alt="Caixas Explosivas">
-                <p class="preco">Surpresas com chocolates, cartas e muito amor</p>
-                <a href="caixas.html" class="btn-primary">Ver mais de Caixas Explosivas</a>
-
-       <!--  <button onclick="comprarWhatsApp('Lírios' , 20000 )" class="btn-primary">Comprar</button> -->
+        <img src="imgDilciaShop/caixas explosivas.png" alt="Caixas Explosivas">
+        <p class="preco">Surpresas com chocolates, cartas e muito amor</p>
+        <a href="caixas.html" class="btn-primary">Ver Caixas</a>
       </div>
     </div>
   </section>
 
-  <!-- pq a dilcia shop -->
-
-   <section class="beneficios">
-  <h2>Por que escolher a nossa empresa?</h2>
-
-  <div class="beneficios-grid">
-    <div class="beneficio-card">
-      <div class="icon-circle">
-           <img src="imgDilciaShop/award_17720822.png" alt="">
+  <!-- BENEFÍCIOS -->
+  <section class="beneficios animate-fade">
+    <h2>Por que escolher a nossa empresa?</h2>
+    <div class="beneficios-grid">
+      <div class="beneficio-card">
+        <div class="icon-circle"><img src="imgDilciaShop/award_17720822.png" alt=""></div>
+        <h3>Qualidade Garantida</h3>
+        <p>Mais de 3000 produtos feitos e vendidos com excelência</p>
       </div>
-      <h3>Qualidade Garantida</h3>
-      <p>Mais de 3000 produtos feitos e vendidos com excelência</p>
-
-    </div>
-    <div class="beneficio-card">
-      <div class="icon-circle">
-        <img src="imgDilciaShop/halloween-candy_12551181.png" alt="">
+      <div class="beneficio-card">
+        <div class="icon-circle"><img src="imgDilciaShop/halloween-candy_12551181.png" alt=""></div>
+        <h3>Feito com Amor</h3>
+        <p>Cada produto é cuidadosamente preparado com atenção aos detalhes</p>
       </div>
-      <h3>Feito com Amor</h3>
-      <p>
-        Cada produto é cuidadosamente preparado com atenção aos detalhes
-      </p>
-    </div>
-
-    <div class="beneficio-card">
-      <div class="icon-circle">
-        <img src="imgDilciaShop/magic-box_10258633.png" alt="">
+      <div class="beneficio-card">
+        <div class="icon-circle"><img src="imgDilciaShop/magic-box_10258633.png" alt=""></div>
+        <h3>Personalização</h3>
+        <p>Criamos presentes únicos adaptados às suas necessidades</p>
       </div>
-      <h3>Personalização</h3>
-      <p>
-        Criamos presentes únicos adaptados às suas necessidades
-      </p>
     </div>
+  </section>
 
-    
+  <!-- CTA FINAL -->
+  <section class="cta animate-fade">
+  <div class="cta-box">
+    <h2>Pronto para surpreender?</h2>
+    <button onclick="falarwhatsApp()" class="btn-primary1">Falar no WhatsApp</button>
+    <a class="btn-primary1" href="https://www.instagram.com/palmiralunguenda_?igsh=MThtN3A1c3VlajExOQ==">Instagram</a>
+    <a class="btn-primary1" href="https://www.tiktok.com/@dilciashop?_r=1&_t=ZM-92TEv1tYYbw">Facebook</a>
   </div>
 </section>
 
-  <!-- CTA FINAL -->
-  <section class="cta">
-    
-    <h2>Pronto para surpreender?</h2>
-    <button onclick="falarwhatsApp()" class="btn-primary1">Falar no WhatsApp</button>
-       <button class=" btn-primary1" href="https://www.instagram.com/dilcia_shop_?igsh=MWJsc3htdWkxbmp4cg==" > <a>Acessar à Página no Instagram</a>
-</button>
-      <button class="btn-primary1" href="https://www.tiktok.com/@dilciashop?_r=1&_t=ZM-92TEv1tYYbw"> <a>Acessar à Página no Tik Tok</a>
-</button>
-
-  </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2025 - @empresa</p>
+    <p>© 2026 - PalmiraFestArt</p>
   </footer>
 
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
