@@ -33,6 +33,7 @@ function falarWhatsApp() {
   window.open(url, "_blank");
 }
 
+
 // Animação de fade-in dos cards ao scroll
 const cards = document.querySelectorAll('.animate-card');
 const fadeOptions = { threshold: 0.3 };
