@@ -2,10 +2,11 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Fotos Polaroid - DilciaShop</title>
+  <title>Fotos Polaroid</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header class="header">
     <div class="container flex-header">
       <a href="index.html" class="btn-outline">Voltar</a>
@@ -14,28 +15,36 @@
 
   <section class="produtos container">
     <h2 class="animate-fade">Polaroid</h2>
+
     <div class="grid">
+
+      <!-- CARD 1 -->
       <div class="card animate-card">
-        <img src="imgDilciaShop/FOTO POLA2.png" alt="Combo 5 fotos 15.000kzs">
+        <img src="imgDilciaShop/FOTO POLA2.png" alt="Combo 5 fotos">
         <h3>Combo de 4 fotos Polaroid</h3>
         <p class="preco">1.500 Kz</p>
-        <button onclick="comprarWhatsApp('Combo de 5 fotos Polaroid',15000)" class="btn-primary">Comprar</button>
+        <button class="btn-primary" onclick="comprarWhatsApp(this)">Comprar</button>
       </div>
+
+      <!-- CARD 2 -->
       <div class="card animate-card">
-        <img src="imgDilciaShop/polaroid.jpeg" alt="Combo 10 fotos 30.000kzs">
+        <img src="imgDilciaShop/polaroid.jpeg" alt="Combo 10 fotos">
         <h3>Combo de 8 fotos Polaroid</h3>
         <p class="preco">3.500 Kz</p>
-        <button onclick="comprarWhatsApp('Combo de 10 fotos Polaroid',30000)" class="btn-primary">Comprar</button>
+        <button class="btn-primary" onclick="comprarWhatsApp(this)">Comprar</button>
       </div>
+
+      <!-- CARD 3 -->
       <div class="card animate-card">
-        <img src="imgDilciaShop/FOTO POLA.png" alt="Combo 5 fotos 15.000kzs">
+        <img src="imgDilciaShop/FOTO POLA.png" alt="Combo 12 fotos">
         <h3>Combo de 12 fotos Polaroid</h3>
-        <p class="preco"> 5.500 Kz</p>
-        <button onclick="comprarWhatsApp('Combo de 5 fotos Polaroid',15000)" class="btn-primary">Comprar</button>
+        <p class="preco">5.500 Kz</p>
+        <button class="btn-primary" onclick="comprarWhatsApp(this)">Comprar</button>
       </div>
+
     </div>
   </section>
 
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
