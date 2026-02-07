@@ -19,7 +19,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #333;
   background: var(--cinza);
-  padding-top: 90px; /* compensa header fixo */
+  padding-top: 90px;
 }
 
 /* CONTAINER */
@@ -51,6 +51,18 @@ body {
   height: auto;
 }
 
+/* NAV BOTÕES HEADER */
+.header nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.header nav a {
+  white-space: nowrap;
+}
+
 /* BOTÕES */
 .btn-primary,
 .btn-primary1,
@@ -59,6 +71,7 @@ body {
   text-decoration: none;
   transition: 0.3s ease;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 /* botão principal */
@@ -93,17 +106,18 @@ body {
 .btn-primary1 {
   background: var(--rosa);
   color: var(--branco);
-  padding: 12px 25px;
+  padding: 12px 22px;
   border-radius: 14px;
   border: 2px dashed var(--branco);
-  width: 100%;
+  width: auto;
+  min-width: 140px;
 }
 
 .btn-primary1:hover {
   transform: scale(1.05);
 }
 
-/* HERO / CARROSSEL */
+/* HERO */
 .hero {
   position: relative;
   height: 100vh;
@@ -174,6 +188,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
+  align-items: stretch;
 }
 
 .card {
@@ -186,6 +201,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 420px;
+  height: 100%;
   transition: 0.3s;
 }
 
@@ -265,6 +281,14 @@ body {
   text-align: center;
 }
 
+.cta-buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 25px;
+}
+
 /* FOOTER */
 .footer {
   background: var(--preto);
@@ -282,5 +306,18 @@ body {
 
   .hero-content p {
     font-size: 1rem;
+  }
+
+  .cta-buttons {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-primary,
+  .btn-outline,
+  .btn-primary1 {
+    padding: 10px 16px;
+    font-size: 0.85rem;
   }
 }
